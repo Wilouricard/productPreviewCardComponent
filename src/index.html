@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="w-full h-screen flex items-center justify-center cream">
+    <main class="w-full">
+      <div
+        id="parent"
+        class="min-w-[600px] w-[30%] my-0 mx-auto flex white rounded-xl bg-white"
+      >
+        <div
+          id="first"
+          class="w-1/2 bg-center bg-cover rounded-l-xl image"
+        ></div>
+
+        <div
+          id="second"
+          class="w-1/2 flex flex-col rounded-r-xl white gap-y-6 py-9 mx-10"
+        >
+          <div id="product-details" class="text-xs">
+            <span
+              class="montserrat text-xs tracking-widest uppercase font-medium text-slate-400"
+            >
+              Preview</span
+            >
+            <h1 class="text-4xl fraunces font-bold">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p id="description" class="w-10/12 leading-normal text-sm text-slate-500 montserrat">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div id="price" class="w-full flex items-center gap-6 fraunces">
+            <p class="text-3xl text-green-900 font-bold">$149.99</p>
+            <p class="text-xs line-through text-slate-500">$169.99</p>
+          </div>
+          <button
+            class="w-full py-4 px-0 my-0 mx-auto flex justify-center items-center text-white font-bold rounded-lg bg-green-900 montserrat cursor-pointer hover:bg-green-700"
+          >
+            <img
+              src="/product-preview-card-component-main/images/icon-cart.svg" class="mr-3"
+            />Add to Cart
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
